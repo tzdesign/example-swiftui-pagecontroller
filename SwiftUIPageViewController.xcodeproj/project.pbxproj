@@ -11,6 +11,8 @@
 		D22EBD132B22065100EFA418 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EBD122B22065100EFA418 /* ContentView.swift */; };
 		D22EBD152B22065500EFA418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22EBD142B22065500EFA418 /* Assets.xcassets */; };
 		D22EBD192B22065500EFA418 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22EBD182B22065500EFA418 /* Preview Assets.xcassets */; };
+		D22EBD202B220D0E00EFA418 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EBD1F2B220D0E00EFA418 /* WeekView.swift */; };
+		D22EBD232B220DC500EFA418 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22EBD222B220DC500EFA418 /* UIKit.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		D22EBD142B22065500EFA418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D22EBD162B22065500EFA418 /* SwiftUIPageViewController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIPageViewController.entitlements; sourceTree = "<group>"; };
 		D22EBD182B22065500EFA418 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D22EBD1F2B220D0E00EFA418 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		D22EBD222B220DC500EFA418 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22EBD232B220DC500EFA418 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 			children = (
 				D22EBD0F2B22065100EFA418 /* SwiftUIPageViewController */,
 				D22EBD0E2B22065100EFA418 /* Products */,
+				D22EBD212B220DC500EFA418 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 			children = (
 				D22EBD102B22065100EFA418 /* SwiftUIPageViewControllerApp.swift */,
 				D22EBD122B22065100EFA418 /* ContentView.swift */,
+				D22EBD1F2B220D0E00EFA418 /* WeekView.swift */,
 				D22EBD142B22065500EFA418 /* Assets.xcassets */,
 				D22EBD162B22065500EFA418 /* SwiftUIPageViewController.entitlements */,
 				D22EBD172B22065500EFA418 /* Preview Content */,
@@ -67,6 +74,14 @@
 				D22EBD182B22065500EFA418 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D22EBD212B220DC500EFA418 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D22EBD222B220DC500EFA418 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22EBD202B220D0E00EFA418 /* WeekView.swift in Sources */,
 				D22EBD132B22065100EFA418 /* ContentView.swift in Sources */,
 				D22EBD112B22065100EFA418 /* SwiftUIPageViewControllerApp.swift in Sources */,
 			);
@@ -290,7 +306,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.pageview.SwiftUIPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,7 +343,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.pageview.SwiftUIPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
